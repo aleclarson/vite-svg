@@ -12,7 +12,7 @@ async function compileSvg(source, id, options) {
         babelConfig: {
           plugins: [
             [
-              '@babel/plugin-transform-react-jsx',
+              require.resolve('@babel/plugin-transform-react-jsx'),
               {
                 useBuiltIns: true,
               },
